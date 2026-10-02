@@ -1,4 +1,4 @@
-import dotenv from "dotenv/config"
+import "dotenv/config";
 import express from "express"
 import connectDB from "./config/database.js";
 import { connectRedis } from "./config/redis.js";
@@ -18,9 +18,9 @@ import chatRouter from "./routes/chatRouter.js";
 const app  = express();
 
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieParser());   
 
-app.use("/user",userRouter);
+app.use("/user",userRouter); 
 app.use("/msg",messageRouter);
 app.use("/chat",chatRouter);
 
@@ -35,7 +35,7 @@ const startServer = async ()=>{
         await connectDB();
          await connectRedis();
        app.listen(process.env.PORT,()=>{
-        console.log(`Server has started listenting at port 3000 ${process.env.PORT}`);
+        console.log(`Server has started listenting at port  ${process.env.PORT}`);
        })
     }
     catch(err){
@@ -45,3 +45,7 @@ const startServer = async ()=>{
 
 
 startServer();
+
+
+//  "email":"asdfsdf@gmail.com",
+//     "password":"Aasdf1asdf"

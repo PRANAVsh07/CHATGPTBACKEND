@@ -1,5 +1,5 @@
 import express from "express"
-import authUserMiddleware from "../middlewares/authusermiddleware.js";
+import authUserMiddleware from "../middlewares/authUserMiddleware.js"
 import { getRecentChat,getSingleChat , createChat , deleteChat} from "../controller/chatController.js"
 
 const chatRouter  = express.Router();

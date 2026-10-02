@@ -25,6 +25,17 @@ const userSchema = new mongoose.Schema({
     required: true
   },
 
+  rateLimit:{
+    typeLimit:{
+      type:Number,
+        default:0
+    }
+  },
+
+   resetAt: {
+      type: Date,
+      default: () => new Date(Date.now() +60 * 1000)
+    },
 
   usage: {
     tokenUsed: {
@@ -45,7 +56,7 @@ const userSchema = new mongoose.Schema({
 
     totalTokenUsed: {
       type: Number,
-      default: 0
+      default: 0,
     }
   }
 }, { timestamps: true });

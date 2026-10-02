@@ -246,6 +246,6 @@ Building this project helped me work with:
 
 **Pranav Sharma**
 
-B.Tech CSE | Backend & MERN Developer | Competitive Programming Learner
+B.Tech CS | Backend & MERN Developer | Competitive Programming Learner
 
 Building projects, learning backend engineering, and improving problem-solving skills.
